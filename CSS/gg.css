@@ -1,0 +1,141 @@
+        #obj {
+            background-color: salmon;
+            width: 150px;
+            height: 150px;
+            border-radius: 50px;
+            position: absolute;
+            left: 500px;
+            top: 150px;
+        }
+        
+        #object {
+            background-color: salmon;
+            width: 150px;
+            height: 150px;
+            border-radius: 50px;
+            position: absolute;
+            left: 500px;
+            top: 150px;
+        }
+        
+        .moving {
+            animation-name: Moving;
+            -webkit-animation-name: Moving;
+            animation-duration: 5s;
+            -webkit-animation-duration: 5s;
+            animation-timing-function: ease;
+            -webkit-animation-timing-function: ease;
+            visibility: visible !important;
+        }
+        
+        @keyframes Moving {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(50%);
+            }
+            65% {
+                transform: translateX(-35%);
+            }
+            75% {
+                transform: translateX(-25);
+            }
+            80% {
+                transform: translateX(-15);
+            }
+            90% {
+                transform: translateX(-2%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        
+        @-webkit-keyframes Moving {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(50%);
+            }
+            65% {
+                transform: translateX(-35%);
+            }
+            75% {
+                transform: translateX(-25);
+            }
+            80% {
+                transform: translateX(-15);
+            }
+            90% {
+                transform: translateX(-2%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        
+        .Jump {
+            animation-name: Jump;
+            -webkit-animation-name: Jump;
+            animation-duration: 2s;
+            -webkit-animation-duration: 2s;
+            animation-timing-function: ease;
+            -webkit-animation-timing-function: ease;
+            visibility: visible !important;
+        }
+        
+        @keyframes Jump {
+            0% {
+                transform: translateY(-100%);
+            }
+            50% {
+                transform: translateY(50%);
+            }
+            65% {
+                transform: translateY(-35%);
+            }
+            75% {
+                transform: translateY(-25);
+            }
+            80% {
+                transform: translateY(-15);
+            }
+            85% {
+                transform: translateY(-6);
+            }
+            90% {
+                transform: translateY(-2%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }
+        
+        @-webkit-keyframes Jump {
+            0% {
+                transform: translateY(-100%);
+            }
+            50% {
+                transform: translateY(50%);
+            }
+            65% {
+                transform: translateY(-35%);
+            }
+            75% {
+                transform: translateY(-25);
+            }
+            80% {
+                transform: translateY(-15);
+            }
+            85% {
+                transform: translateY(-6);
+            }
+            90% {
+                transform: translateY(-2%);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+        }

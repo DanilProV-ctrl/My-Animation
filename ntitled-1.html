@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSS</title>
+    <link rel="shurtcut icon" type="image/x-icon" href="https://img2.freepng.ru/20180426/jce/kisspng-cascading-style-sheets-computer-icons-css3-5ae186f9bb32e2.7754006115247295937668.jpg">
+    <link rel="stylesheet" href="CSS/gg.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="obj"></div>
+    <div id="object" class="moving"></div>
+    <div id="object" class="Jump"></div>
+    <input type="radio" id="animcss" name="anima" onclick="Btn()">
+    <label for="animcss">: walking on x </label>
+    <input type="radio" id="animacss" name="anima" onclick="Btnj()">
+    <label for="animacss">: walking on y </label>
+</body>
+<script>
+    // var test = $('#test').html();
+    //alert(test)
+    // var str = '                  tttttt                     '
+    // alert(str)
+    // alert($.trim(str))
+    //<div id="test" onclick="$('#test').hide ()">Danchik</div>
+    $('.moving').hide();
+    $('.Jump').hide();
+
+    function Btn() {
+        $('.moving').show();
+        $('.Jump').hide();
+        $('#obj').hide();
+    }
+
+    function Btnj() {
+        $('.Jump').show();
+        $('.moving').hide();
+        $('#obj').hide();
+    }
+</script>
+
+</html>
