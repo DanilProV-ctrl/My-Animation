@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Animation</title>
+    <link rel="shurtcut icon" type="image/x-icon" href="https://alchetron.com/cdn/ngc-1023-0983dc6b-1444-4492-8553-902045934e2-resize-750.jpeg">
+    <link rel="stylesheet" href="CSS/Animation.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="object"></div>
+    <div id="object" class="movingX"></div>
+    <div id="object" class="movingY"></div>
+    <div id="object" class="Shake"></div>
+    <div id="object" class="Rotate"></div>
+    <input type="radio" id="MoveX" name="Move" onclick="MX()">
+    <label for="MoveX">: X mooving</label>
+    <input type="radio" id="MoveY" name="Move" onclick="MY()">
+    <label for="MoveY">: Y mooving</label>
+    <input type="radio" name="Move" id="Shake" onclick="SHK()">
+    <label for="Shake">: Shake</label>
+    <input type="radio" name="Move" id="Rotate" onclick="RT()">
+    <label for="Rotate">: Rotate</label>
+</body>
+<script>
+    $('#object').show();
+    $('.movingX').hide();
+    $('.movingY').hide();
+    $('.Shake').hide();
+    $('.Rotate').hide();
+
+    function MX() {
+        $('#object').hide();
+        $('.movingX').show();
+        $('.movingY').hide();
+        $('.Shake').hide();
+        $('.Rotate').hide();
+    }
+
+    function MY() {
+        $('#object').hide();
+        $('.movingX').hide();
+        $('.movingY').show();
+        $('.Shake').hide();
+        $('.Rotate').hide();
+    }
+
+    function SHK() {
+        $('#object').hide();
+        $('.movingX').hide();
+        $('.movingY').hide();
+        $('.Shake').show();
+        $('.Rotate').hide();
+    }
+
+    function RT() {
+        $('#object').hide();
+        $('.movingX').hide();
+        $('.movingY').hide();
+        $('.Shake').hide();
+        $('.Rotate').show();
+    }
+</script>
+
+</html>
