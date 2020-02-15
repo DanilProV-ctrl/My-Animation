@@ -1,239 +1,304 @@
-        #object {
-            width: 200px;
-            height: 200px;
-            background-color: deepskyblue;
-            border-radius: 50px;
-            position: absolute;
-            top: 50px;
-            left: 150px;
-            visibility: visible;
-        }
-        
-        .movingX {
-            animation-name: MX;
-            -webkit-animation-name: MX;
-            animation-duration: 2s;
-            -webkit-animation-duration: 2s;
-            animation-timing-function: ease;
-            -webkit-animation-timing-function: ease;
-            visibility: visible !important;
-        }
-        
-        @keyframes MX {
-            0% {
-                transform: translateX(100%);
-            }
-            50% {
-                transform: translateX(-50%);
-            }
-            80% {
-                transform: translateX(-25%);
-            }
-            100% {
-                transform: translateX(0%);
-            }
-        }
-        
-        @-webkit-keyframes MX {
-            0% {
-                transform: translateX(100%);
-            }
-            50% {
-                transform: translateX(-50%);
-            }
-            80% {
-                transform: translateX(-25%);
-            }
-            100% {
-                transform: translateX(0%);
-            }
-        }
-        
-        #object {
-            width: 200px;
-            height: 200px;
-            border-radius: 50px;
-            background-color: deepskyblue;
-            position: absolute;
-            top: 100px;
-            left: 150px;
-            visibility: visible;
-        }
-        
-        .movingY {
-            animation-name: MY;
-            -webkit-animation-name: MY;
-            animation-duration: 2s;
-            -webkit-animation-duration: 2s;
-            animation-timing-function: ease;
-            -webkit-animation-timing-function: ease;
-            visibility: visible !important;
-        }
-        
-        @keyframes MY {
-            0% {
-                transform: translateY(-100%);
-            }
-            50% {
-                transform: translateY(50%);
-            }
-            80% {
-                transform: translateY(25%);
-            }
-            100% {
-                transform: translateY(0%);
-            }
-        }
-        
-        @-webkit-keyframes MY {
-            0% {
-                transform: translateY(-100%);
-            }
-            50% {
-                transform: translateY(50%);
-            }
-            80% {
-                transform: translateY(25%);
-            }
-            100% {
-                transform: translateY(0%);
-            }
-        }
-        
-        #object {
-            width: 200px;
-            height: 200px;
-            border-radius: 50px;
-            background-color: deepskyblue;
-            position: absolute;
-            top: 100px;
-            left: 150px;
-            visibility: visible;
-        }
-        
-        .Shake {
-            animation-name: Shake;
-            -webkit-animation-name: Shake;
-            animation-duration: 1s;
-            -webkit-animation-duration: 1s;
-            animation-timing-function: ease;
-            -webkit-animation-timing-function: ease;
-            visibility: visible !important;
-        }
-        
-        @keyframes Shake {
-            0% {
-                transform: translateX(100%);
-            }
-            35% {
-                transform: translateX(80%);
-            }
-            50% {
-                transform: translateX(50%);
-            }
-            65% {
-                transform: translateX(80%);
-            }
-            75% {
-                transform: translateY(-5%);
-            }
-            25% {
-                transform: translateY(15%);
-            }
-            40% {
-                transform: translateY(0%);
-            }
-            60% {
-                transform: translateY(15%);
-            }
-            85% {
-                transform: translateY(0%);
-            }
-        }
-        
-        @-webkit-keyframes Shake {
-            0% {
-                transform: translateX(100%);
-            }
-            35% {
-                transform: translateX(80%);
-            }
-            50% {
-                transform: translateX(50%);
-            }
-            65% {
-                transform: translateX(80%);
-            }
-            75% {
-                transform: translateY(-5%);
-            }
-            25% {
-                transform: translateY(15%);
-            }
-            40% {
-                transform: translateY(0%);
-            }
-            60% {
-                transform: translateY(15%);
-            }
-            85% {
-                transform: translateY(0%);
-            }
-        }
-        
-        #object {
-            width: 200px;
-            height: 200px;
-            border-radius: 50px;
-            background-color: deepskyblue;
-            position: absolute;
-            top: 100px;
-            left: 150px;
-            visibility: visible;
-        }
-        
-        .Rotate {
-            animation-name: Rotate;
-            -webkit-animation-name: Rotate;
-            animation-duration: 2s;
-            -webkit-animation-duration: 2s;
-            animation-timing-function: ease;
-            -webkit-animation-timing-function: ease;
-            visibility: visible !important;
-        }
-        
-        @keyframes Rotate {
-            0% {
-                transform: scaleY(0.8) rotateX(0deg);
-            }
-            50% {
-                transform: scaleY(1.1) rotateX(180deg);
-            }
-            65% {
-                transform: scaleY(0.9) rotateX(180deg);
-            }
-            80% {
-                transform: scaleY(1) rotateX(180deg);
-            }
-            100% {
-                transform: scaleY(0.8) rotateX(0deg);
-            }
-        }
-        
-        @-webkit-keyframes Rotate {
-            0% {
-                -webkit-transform: scaleY(0.8) rotateX(0deg);
-            }
-            50% {
-                -webkit-transform: scaleY(1.1) rotateX(180deg);
-            }
-            65% {
-                transform: scaleY(0.9) rotateX(180deg);
-            }
-            80% {
-                -webkit-transform: scaleY(1) rotateX(180deg);
-            }
-            100% {
-                -webkit-transform: scaleY(0.8) rotateX(0deg);
-            }
-        }
+#object {
+    width: 200px;
+    height: 200px;
+    background-color: deepskyblue;
+    border-radius: 50px;
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    visibility: visible;
+}
+
+.movingX {
+    animation-name: MX;
+    -webkit-animation-name: MX;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+}
+
+@keyframes MX {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    80% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes MX {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    80% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#object {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    visibility: visible;
+}
+
+.movingY {
+    animation-name: MY;
+    -webkit-animation-name: MY;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+}
+
+@keyframes MY {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    80% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes MY {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    80% {
+        transform: translateY(25%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#object {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    visibility: visible;
+}
+
+.Shake {
+    animation-name: Shake;
+    -webkit-animation-name: Shake;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+}
+
+@keyframes Shake {
+    0% {
+        transform: translateX(100%);
+    }
+    35% {
+        transform: translateX(80%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    65% {
+        transform: translateX(80%);
+    }
+    75% {
+        transform: translateY(-5%);
+    }
+    25% {
+        transform: translateY(15%);
+    }
+    40% {
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(15%);
+    }
+    85% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes Shake {
+    0% {
+        transform: translateX(100%);
+    }
+    35% {
+        transform: translateX(80%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    65% {
+        transform: translateX(80%);
+    }
+    75% {
+        transform: translateY(-5%);
+    }
+    25% {
+        transform: translateY(15%);
+    }
+    40% {
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(15%);
+    }
+    85% {
+        transform: translateY(0%);
+    }
+}
+
+#object {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    visibility: visible;
+}
+
+.Rotate {
+    animation-name: Rotate;
+    -webkit-animation-name: Rotate;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+@keyframes Rotate {
+    0% {
+        transform: scaleY(0.8) rotateX(0deg);
+    }
+    50% {
+        transform: scaleY(1.1) rotateX(180deg);
+    }
+    65% {
+        transform: scaleY(0.9) rotateX(180deg);
+    }
+    80% {
+        transform: scaleY(1) rotateX(180deg);
+    }
+    100% {
+        transform: scaleY(0.8) rotateX(0deg);
+    }
+}
+
+@-webkit-keyframes Rotate {
+    0% {
+        -webkit-transform: scaleY(0.8) rotateX(0deg);
+    }
+    50% {
+        -webkit-transform: scaleY(1.1) rotateX(180deg);
+    }
+    65% {
+        transform: scaleY(0.9) rotateX(180deg);
+    }
+    80% {
+        -webkit-transform: scaleY(1) rotateX(180deg);
+    }
+    100% {
+        -webkit-transform: scaleY(0.8) rotateX(0deg);
+    }
+}
+
+#object {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    visibility: visible;
+}
+
+.Jump {
+    animation-name: Jump;
+    -webkit-animation-name: Jump;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible !important;
+}
+
+@keyframes Jump {
+    0% {
+        transform: translateY(0%) scaleX(0.9);
+    }
+    60% {
+        transform: translateY(-100%) scaleY(0.98);
+    }
+    70% {
+        transform: translateY(0%) scaleX(0.94);
+    }
+    80% {
+        transform: translateY(0%) scaleY(0.94) scaleX(1.04);
+    }
+    90% {
+        transform: translateY(0%) scaleY(1.05) scaleX(1);
+    }
+    100% {
+        transform: translateY(0%) scaleY(1) scaleX(1);
+    }
+}
+
+@-webkit-keyframes Jump {
+    0% {
+        transform: translateY(0%) scaleX(0.9);
+    }
+    60% {
+        transform: translateY(-100%) scaleY(0.98);
+    }
+    70% {
+        transform: translateY(0%) scaleX(0.94);
+    }
+    80% {
+        transform: translateY(0%) scaleY(0.94) scaleX(1.04);
+    }
+    90% {
+        transform: translateY(0%) scaleY(1.05) scaleX(1);
+    }
+    100% {
+        transform: translateY(0%) scaleY(1) scaleX(1);
+    }
+}

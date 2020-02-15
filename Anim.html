@@ -15,6 +15,7 @@
     <div id="object" class="movingY"></div>
     <div id="object" class="Shake"></div>
     <div id="object" class="Rotate"></div>
+    <div id="object" class="Jump"></div>
     <input type="radio" id="MoveX" name="Move" onclick="MX()">
     <label for="MoveX">: X mooving</label>
     <input type="radio" id="MoveY" name="Move" onclick="MY()">
@@ -23,6 +24,8 @@
     <label for="Shake">: Shake</label>
     <input type="radio" name="Move" id="Rotate" onclick="RT()">
     <label for="Rotate">: Rotate</label>
+    <input type="radio" name="Move" id="Jump" onclick="JP()">
+    <label for="Jump">: Jump</label>
 </body>
 <script>
     $('#object').show();
@@ -30,6 +33,7 @@
     $('.movingY').hide();
     $('.Shake').hide();
     $('.Rotate').hide();
+    $('.Jump').hide();
 
     function MX() {
         $('#object').hide();
@@ -37,6 +41,7 @@
         $('.movingY').hide();
         $('.Shake').hide();
         $('.Rotate').hide();
+        $('.Jump').hide();
     }
 
     function MY() {
@@ -45,6 +50,7 @@
         $('.movingY').show();
         $('.Shake').hide();
         $('.Rotate').hide();
+        $('.Jump').hide();
     }
 
     function SHK() {
@@ -53,6 +59,7 @@
         $('.movingY').hide();
         $('.Shake').show();
         $('.Rotate').hide();
+        $('.Jump').hide();
     }
 
     function RT() {
@@ -61,6 +68,16 @@
         $('.movingY').hide();
         $('.Shake').hide();
         $('.Rotate').show();
+        $('.Jump').hide();
+    }
+
+    function JP() {
+        $('.Jump').show();
+        $('#object').hide();
+        $('.movingX').hide();
+        $('.movingY').hide();
+        $('.Shake').hide();
+        $('.Rotate').hide();
     }
 </script>
 
